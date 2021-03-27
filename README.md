@@ -2,7 +2,7 @@
 
 ---
 
-# svelte app
+# svelte app with eslint and prettier
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
 
@@ -15,6 +15,17 @@ cd svelte-app
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
+## VS Code - Eslint and Prettier
+
+- Add plugin [Svelte for VSCode](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
+
+- Add following content to your settings.json
+
+```json
+"[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
+"eslint.validate": [ "javascript", "svelte" ]
+```
+
 
 ## Get started
 
@@ -23,6 +34,17 @@ Install the dependencies...
 ```bash
 cd svelte-app
 npm install
+```
+
+### VS Code - Eslint and Prettier
+
+- Add plugin [Svelte for VSCode](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
+
+-Add following content to your settings.json
+
+```json
+"[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
+    "eslint.validate": [ "javascript", "svelte" ]
 ```
 
 ...then start [Rollup](https://rollupjs.org):
