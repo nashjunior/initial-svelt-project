@@ -26,7 +26,32 @@ module.exports = {
   ],
   rules: {
     'import/no-mutable-exports': 'off',
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+    '@typescript-eslint/explicit-function-return-type': [
+      'error',
+      {
+        allowExpressions: true,
+      },
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": ["interface"],
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      },
+      {
+        "selector": ["typeAlias"],
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "[A-Z]*Type",
+          "match": true
+        }
+      },
+    ],
   },
   settings: {
     // eslint-disable-next-line global-require
